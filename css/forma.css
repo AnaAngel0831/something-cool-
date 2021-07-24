@@ -1,0 +1,137 @@
+body{
+  background-color:#191919;
+  display:flex;
+  align-items:center;
+}
+
+
+
+.circle2{
+  position:relative;
+  border-radius: 100%;
+  background-color: #191919;
+  width: 50px;
+  height:50px;
+  transform:translate(300px, 300px); // 300 pixels to the right, and 300 pixels down from its current position
+  left:125px;
+  overflow:hidden;
+  box-shadow: 0 0 0 10px #5DBCF9,
+              0 0 0 20px #191919,
+              0 0 0 30px #5DBCF9,
+              0 0 0 40px #191919,
+              0 0 0 50px #5DBCF9
+}
+
+.triangle{
+  cursor:pointer;
+  background-color:#5DBCF9;
+  width:100px;
+  height:100px;
+  position:absolute;
+  border-right-color: #5DBCF9;
+  border:25px solid transparent;
+ transform:translate(165px, 300px);
+
+}
+.left{
+  position:absolute;
+  width:330px;
+  height: 1000px;
+  background-color: #191919;
+}
+
+.cut1{
+  position:absolute;
+  width:100px;
+  height:100px;
+  background-color:#191919;
+  transform:matrix(1,-1,0,1,217,230);//matrix(scaleX(),skewY(),skewX(),scaleY(),translateX(),translateY())
+
+}
+.cut2{
+  position:absolute;
+  width:100px;
+  height:100px;
+  background-color:#191919;
+  transform:matrix(1,1,0,1,217,370);//matrix(scaleX(),skewY(),skewX(),scaleY(),translateX(),translateY())
+
+}
+.left1{
+  position:absolute;
+  width:100px;
+  height: 100px;
+  background-color: #191919;
+  border:25px solid transparent;
+  transform:translate(90px, 300px);
+}
+.boxy{
+  cursor:pointer;
+  position: absolute;
+  background-color: #5DBCF9;
+  width:70px;
+  height:50px;
+  border-radius: 15%;
+  transform:translate(220px, 300px);
+}
+.snoww img{
+  width:50px;
+  animation: cd 7s linear infinite;
+}
+.snoww{
+  width:100%;
+  display:flex;
+  align-items: center;
+  position: absolute;
+  justify-content: space-around;
+  bottom:-70px;
+}
+
+@keyframes cd{
+  0%{
+    transform:translateY(0);
+    opacity:0;
+  }
+
+  50%{
+
+    opacity:1;
+  }
+
+  70%{
+
+    opacity:1;
+  }
+
+  100%{
+    transform:translateY(-95vh);
+    opacity:0;
+  }
+
+
+}
+
+.snoww img:nth-child(1){
+  animation-delay:2s;
+  width:75px;
+}
+
+.snoww img:nth-child(2){
+  animation-delay:1s;
+  width:35px;
+}
+
+.snoww img:nth-child(3){
+  animation-delay:3s;
+  width:50px;
+}
+.snoww img:nth-child(4){
+  animation-delay:4.5s;
+  width:75px;
+}
+.snoww img:nth-child(5){
+  animation-delay:7s;
+  width:65px;
+}
+.snoww img:nth-child(6){
+  animation-delay:2s;
+}
